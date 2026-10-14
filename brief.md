@@ -18,10 +18,18 @@ The OWASP Mobile Application Security Verification Standard (MASVS) is a securit
 
 Resource: OWASP - Mobile Application Security Verification Standard (MASVS) - https://mas.owasp.org/MASVS/
 ## Networking
+BGP route hijacking occurs when a network announces IP routes it is not authorized to originate, potentially redirecting internet traffic through the wrong network. Resource Public Key Infrastructure (RPKI) helps prevent this by using Route Origin Authorizations (ROAs) to verify which networks may announce specific IP prefixes. Network operators can reject invalid announcements. However, RPKI origin validation does not verify the entire network path, so some routing attacks remain possible.
 
+Resource: RIPE NCC - BGP Origin Validation - https://www.ripe.net/manage-ips-and-asns/resource-management/rpki/bgp-origin-validation/
 ## Cybersecurity
+Log4Shell (CVE-2021-44228) was a critical security vulnerability in Apache Log4j 2, a Java logging library. Attackers could exploit its JNDI lookup feature through malicious log messages, potentially executing unauthorized code on vulnerable servers. It was especially dangerous because Log4j was widely used and the attack could be triggered remotely. Apache initially released version 2.15.0, then provided stronger fixes in later versions by disabling or removing unsafe lookup behavior.
+
+Resource: Apache Logging Services - Security - https://logging.apache.org/security.html
 
 ## Data
+A Software Bill of Materials (SBOM) is a structured inventory of the components and dependencies used in a software application. It helps organizations identify vulnerable libraries and manage software supply chain risks. An SBOM should include essential information such as component names, versions, producers, unique identifiers, dependency relationships, the SBOM author, and a timestamp. This information makes it easier to track software components and respond when security vulnerabilities are discovered.
+
+Resource: CISA - Minimum Elements for a Software Bill of Materials (SBOM) - https://www.cisa.gov/sites/default/files/2025-08/2025_CISA_SBOM_Minimum_Elements.pdf
 
 ## Misconception in My Track
 
