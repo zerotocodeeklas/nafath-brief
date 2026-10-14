@@ -32,5 +32,6 @@ A Software Bill of Materials (SBOM) is a structured inventory of the components 
 Resource: CISA - Minimum Elements for a Software Bill of Materials (SBOM) - https://www.cisa.gov/sites/default/files/2025-08/2025_CISA_SBOM_Minimum_Elements.pdf
 
 ## Misconception in My Track
-
+A common misconception in software development is that storing passwords and API keys directly in source code is safe as long as the repository is private. However, private repositories can still be exposed through accidental sharing or unauthorized access. The Twelve-Factor App methodology recommends separating configuration from code and storing it in environment variables. This reduces the risk of exposing credentials when code is shared and makes configuration easier to manage across different deployments. The section "III. Config — Store config in the environment" explains why configuration should remain separate from source code.
 ## Open Question
+How can large software development teams securely manage and rotate API keys and database passwords across multiple applications without exposing sensitive information?
